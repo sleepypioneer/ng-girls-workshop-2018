@@ -1,0 +1,8 @@
+
+{{title}}
+<input class="todo-input" #inputElementRef [value]="title" (keyup.enter)="submitValue(inputElementRef.value)"/>
+​
+<button class="btn" (click)="submitValue(inputElementRef.value)">
+  Add
+</button>
+
