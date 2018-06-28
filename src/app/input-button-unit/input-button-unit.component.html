@@ -1,8 +1,12 @@
 
-{{title}}
-<input class="todo-input" #inputElementRef [value]="title" (keyup.enter)="submitValue(inputElementRef.value)"/>
-​
-<button class="btn" (click)="submitValue(inputElementRef.value)">
-  Add
-</button>
+<div class="block">
+  <span class="title">
+    {{title}}
+  </span>
+  <input class="todo-input" #inputElementRef [value]="default_task" (keyup.enter)="submitValue(inputElementRef.value)"/>
+  ​
+  <button class="btn" (click)="submitValue(inputElementRef.value)">
+    Add
+  </button>
+</div>
 

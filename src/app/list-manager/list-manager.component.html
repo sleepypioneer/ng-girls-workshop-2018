@@ -1,6 +1,7 @@
 <div class="todo-app">
+  <img alt="pirate ship" id="pirate_ship" src="assets/pirate_boat.png"/>
   <app-input-button-unit (submit)="addItem($event)"></app-input-button-unit>
-    
+
   <ul>
     <li *ngFor="let todoItem of todoList">
       <app-todo-item [item]="todoItem"

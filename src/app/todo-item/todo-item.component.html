@@ -1,13 +1,13 @@
 <div class="todo-item">
   <input type="checkbox" class="todo-checkbox"
-         (change)="item.completed= $event.target.checked" 
+         (change)="item.completed= $event.target.checked"
          [checked] = "item.completed"
          />
   <span class="todo-title" [ngClass]="{'completed': item.completed}">
-    {{ item.title }}
+      {{ item.title }}
   </span>
 
-  <button class="btn btn-red" (click)="removeItem()">
-      remove
+  <button class="btn btn-remove" (click)="removeItem()">
+    <i class="fa fa-trash-o" style="font-size:1.5rem;"></i>
   </button>
 </div>

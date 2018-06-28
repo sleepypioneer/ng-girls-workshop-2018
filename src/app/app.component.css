@@ -1,15 +1,11 @@
-* {
-
+.title {
+  letter-spacing: -0.8px;
 }
 
 .app-title {
-  font-family: 'IM Fell English SC', serif;
   font-size: 52px;
   line-height: 52px;
   margin-bottom: 30px;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: -0.8px;
 }
 
 #pirate_flag {
